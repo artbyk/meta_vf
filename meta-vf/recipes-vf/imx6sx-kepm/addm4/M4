@@ -1,0 +1,5 @@
+#! /bin/sh
+mount /dev/mmcblk2p1 /mnt/mmcboot
+cp /kepm/M4ERPC.bin /mnt/mmcboot
+umount /mnt/mmcboot
+exit 0

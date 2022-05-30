@@ -1,0 +1,11 @@
+[Unit]
+Description=ORION Front port Ethernet communication
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=/kepm/A9USB
+StandardOutput=tty
+
+[Install]
+WantedBy=multi-user.target

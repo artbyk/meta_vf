@@ -1,0 +1,6 @@
+#! /bin/sh
+modprobe rpmsg_multiept
+#modprobe g_ether
+chmod a+x /kepm/LIN
+exec /lib/systemd/systemd
+exit 0

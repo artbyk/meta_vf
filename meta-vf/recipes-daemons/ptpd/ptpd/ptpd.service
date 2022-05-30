@@ -1,0 +1,12 @@
+[Unit]
+Description=ptpd time precision daemon
+BindsTo=sys-subsystem-net-devices-eth0.device
+After=sys-subsystem-net-devices-eth0.device
+
+[Service]
+Type=forking
+EnvironmentFile=-@SYSCONFDIR@/default/ptpd
+ExecStart=@BINDIR@/ptpd2 $PTPDARGS
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=RNDIS service for KEPM ORION applications
+After=lin.service
+Requires=lin.service
+ 
+[Service]
+Type=simple
+ExecStart=/kepm/rndis -qws
+ 
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=KEPM service to start A9 application
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=/kepm/LIN
+StandardOutput=tty
+
+[Install]
+WantedBy=sysinit.target

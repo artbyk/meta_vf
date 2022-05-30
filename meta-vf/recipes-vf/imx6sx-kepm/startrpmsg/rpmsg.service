@@ -1,0 +1,10 @@
+[Unit]
+Description=RPMSG service for KEPM A9-M4 applications
+DefaultDependencies=no
+ 
+[Service]
+Type=simple
+ExecStart=/kepm/rpmsg -qws
+ 
+[Install]
+WantedBy=basic.target

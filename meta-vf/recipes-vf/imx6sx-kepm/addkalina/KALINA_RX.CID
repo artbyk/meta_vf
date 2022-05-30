@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCL xmlns:ekepm="http://www.kepm.com/2018/61850" xmlns:sxy="http://www.iec.ch/61850/2003/SCLcoordinates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd http://www.iec.ch/61850/2003/SCLcoordinates  SCL_Coordinates.xsd" version="2007" revision="B">
+  <Header id="CID File" version="0" revision="1.0" />
+  <Communication>
+    <SubNetwork name="W01" type="8-MMS">
+      <ConnectedAP iedName="ORION_PRM" apName="S1">
+        <Address>
+          <P type="IP">0.0.0.0</P>
+          <P type="IP-SUBNET">0.0.0.0</P>
+          <P type="IP-GATEWAY">0.0.0.0</P>
+          <P type="OSI-TSEL">0001</P>
+          <P type="OSI-PSEL">00000001</P>
+          <P type="OSI-SSEL">0001</P>
+        </Address>
+        <GSE ldInst="LD0" cbName="GOOSEMessage1">
+          <Address>
+            <P type="VLAN-ID">0</P>
+            <P type="VLAN-PRIORITY">4</P>
+            <P type="MAC-Address">01-0c-cd-01-00-01</P>
+            <P type="APPID">9</P>
+          </Address>
+        </GSE>
+      </ConnectedAP>
+    </SubNetwork>
+  </Communication>
+  <IED name="ORION_PRM" desc="APK" type="RX" manufacturer="KEPM">
+      <Services nameLength="64">
+         <ClientServices goose="true"/>
+         <ConfDataSet max="15" maxAttributes="375"/>
+         <DynDataSet max="2" maxAttributes="256"/>
+         <ConfReportControl max="10"/>
+         <ReportSettings bufTime="Dyn" cbName="Conf" datSet="Conf" intgPd="Dyn" optFields="Conf" rptID="Conf" trgOps="Dyn"/>
+         <GSESettings appID="Conf" cbName="Conf" datSet="Conf" dataLabel="Conf"/>
+         <GOOSE max="5"/>
+         <DynAssociation/>
+         <GetDirectory/>
+         <GetDataObjectDefinition/>
+         <GetCBValues/>
+         <DataObjectDirectory/>
+         <GetDataSetValue/>
+         <DataSetDirectory/>
+         <ReadWrite/>
+         <FileHandling/>
+      </Services>
+    <AccessPoint name="S1">
+      <Server>
+        <Authentication />
+        <LDevice inst="LD0">
+          <LN0 lnClass="LLN0" lnType="LLN0_Kalina" inst="">
+            <DataSet name="OUTPUT" desc="Command output status">
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="SPCSO8" daName="stVal" />
+            </DataSet>
+            <DataSet name="RECCOM" desc="Command receiving status">
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO9" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO10" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO11" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO12" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO13" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO14" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO15" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO16" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO17" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO18" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO19" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO20" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO21" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO22" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO23" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO24" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO25" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO26" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO27" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO28" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO29" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO30" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO31" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO32" daName="stVal" />
+            </DataSet>
+	    <DataSet name="OUTCOM" desc="Command sending status">
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind9" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind10" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind11" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind12" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind13" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind14" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind15" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind16" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind17" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind18" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind19" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind20" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind21" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind22" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind23" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind24" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind25" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind26" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind27" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind28" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind29" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind30" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind31" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind32" daName="stVal" />
+            </DataSet>
+	    <DataSet name="OUTCOMGOOSE" desc="Command sending status">
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind1" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind1" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind2" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind2" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind3" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind3" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind4" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind4" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind5" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind5" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind6" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind6" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind7" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind7" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind8" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind8" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind9" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind9" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind9" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind10" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind10" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind10" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind11" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind11" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind11" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind12" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind12" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind12" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind13" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind13" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind13" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind14" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind14" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind14" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind15" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind15" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind15" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind16" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind16" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind16" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind17" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind17" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind17" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind18" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind18" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind18" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind19" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind19" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind19" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind20" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind20" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind20" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind21" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind21" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind21" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind22" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind22" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind22" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind23" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind23" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind23" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind24" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind24" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind24" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind25" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind25" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind25" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind26" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind26" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind26" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind27" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind27" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind27" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind28" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind28" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind28" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind29" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind29" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind29" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind30" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind30" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind30" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind31" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind31" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind31" daName="t" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind32" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind32" daName="q" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="Ind32" daName="t" />
+            </DataSet>
+            <DataSet name="OUTCOMBLOCK" desc="GOOSE Block keys status">
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO9" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO10" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO11" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO12" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO13" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO14" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO15" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO16" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO17" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO18" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO19" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO20" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO21" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO22" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO23" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO24" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO25" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO26" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO27" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO28" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO29" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO30" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO31" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="GO" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO32" daName="stVal" />
+            </DataSet>
+           <DataSet name="OUTPUTBLOCK" desc="OUTPUT Block keys status">
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO1" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO2" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO3" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO4" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO5" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO6" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO7" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO8" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO9" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO10" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO11" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO12" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO13" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO14" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO15" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO16" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO17" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO18" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO19" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO20" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO21" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO22" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO23" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO24" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO25" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO26" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO27" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO28" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO29" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO30" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO31" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO32" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO33" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO34" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO35" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO36" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO37" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO38" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO39" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DOBL" lnClass="GGIO" fc="ST" lnInst="1" doName="SPCSO40" daName="stVal" />
+            </DataSet>
+             <DataSet name="DeviceStatus" desc="ModHealthLocRem">
+              <FCDA ldInst="LD0" lnClass="LLN0" fc="ST" doName="Mod" daName="stVal" />
+              <FCDA ldInst="LD0" lnClass="LLN0" fc="ST" doName="Health" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="1" doName="Health" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="2" doName="Health" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="3" doName="Health" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="4" doName="Health" />
+              <FCDA ldInst="LD0" prefix="DO" lnClass="GGIO" fc="ST" lnInst="5" doName="Health" />
+              <FCDA ldInst="LD0" lnClass="LLN0" fc="ST" doName="LocKey" daName="stVal" />
+              <FCDA ldInst="LD0" lnClass="LPHD" fc="ST" lnInst="1" doName="GooseON" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="trip" daName="stVal" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="IntIn1" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="ST" lnInst="1" doName="IntIn2" />
+            </DataSet>
+            <DataSet name="Measurements" desc="PUI">
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="MX" lnInst="1" doName="AnIn1" />
+              <FCDA ldInst="LD0" prefix="RX" lnClass="GGIO" fc="MX" lnInst="1" doName="AnIn2" />
+            </DataSet>
+            <ReportControl name="ReportOUTPUT" desc="Command output status" confRev="1" datSet="OUTPUT" rptID="Events2" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+            <ReportControl name="ReportOUTCOMBLOCK" desc="GOOSE Block keys status" confRev="1" datSet="OUTCOMBLOCK" rptID="Events6" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+            <ReportControl name="ReportOUTPUTBLOCK" desc="Output Block keys status" confRev="1" datSet="OUTPUTBLOCK" rptID="Events7" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+            <ReportControl name="ReportDS" desc="DeviceStatus" confRev="1" datSet="DeviceStatus" rptID="Events1" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+            <ReportControl name="ReportRECCOM" desc="Command receiving status" confRev="1" datSet="RECCOM" rptID="Events3" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+	    <ReportControl name="ReportOUTCOM" desc="GOOSE output status" confRev="1" datSet="OUTCOM" rptID="Events5" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+            <ReportControl name="ReportMeas" desc="Measurements" confRev="1" datSet="Measurements" rptID="Events4" buffered="true" intgPd="1000" bufTime="50">
+              <TrgOps dchg="true" qchg="true" dupd="false" period="false" gi="true"/>
+	      <OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" dataRef="false" entryID="true" configRef="true" bufOvfl="true" />
+            <RptEnabled max="2"/>
+            </ReportControl>
+            <GSEControl appID="ORION" name="GOOSEMessage1" desc="Commands status" type="GOOSE" datSet="OUTCOMGOOSE" confRev="1" minTime="4" maxTime="1000" />
+          </LN0>
+          <LN lnClass="LPHD" lnType="LPHD1" inst="1" />
+          <LN prefix="DO" lnClass="GGIO" lnType="GGIO1" inst="1" />
+          <LN prefix="DO" lnClass="GGIO" lnType="GGIO1" inst="2" />
+          <LN prefix="DO" lnClass="GGIO" lnType="GGIO1" inst="3" />
+          <LN prefix="DO" lnClass="GGIO" lnType="GGIO1" inst="4" />
+          <LN prefix="DO" lnClass="GGIO" lnType="GGIO1" inst="5" />
+          <LN prefix="RX" lnClass="GGIO" lnType="GGIO0" inst="1" />
+          <LN prefix="GO" lnClass="GGIO" lnType="GGIO5" inst="1" />
+          <LN prefix="DOBL" lnClass="GGIO" lnType="GGIO6" inst="1" />
+        </LDevice>
+      </Server>
+    </AccessPoint>
+  </IED>
+  <DataTypeTemplates>
+    <LNodeType id="LLN0_Kalina" lnClass="LLN0">
+      <DO name="Mod" type="modENC_Kalina" />
+      <DO name="Beh" type="ENS_behaviour_Kalina" />
+      <DO name="Health" type="ENS_health_Kalina" />
+      <DO name="NamPlt" type="LPL_LN0_Kalina" />
+      <DO name="LocKey" type="SPS_1_Proxy" />
+      <DO name="LEDRs" type="SPC_1_SPCSO1" />
+    </LNodeType>
+    <LNodeType id="LPHD1" lnClass="LPHD">
+      <DO name="PhyNam" type="DPL_1_PhyNam" />
+      <DO name="PhyHealth" type="ENS_health_Kalina" />
+      <DO name="Proxy" type="SPS_1_Proxy" />
+      <DO name="GooseON" type="SPS_1_Proxy" />
+    </LNodeType>
+    <LNodeType id="GGIO0" lnClass="GGIO">
+      <DO name="Mod" type="SPS_1_Proxy" />
+      <DO name="Beh" type="ENS_behaviour_Kalina" />
+      <DO name="AnIn1" desc="Power" type="MV_1_AnIn1" />
+      <DO name="AnIn2" desc="Voltage" type="MV_1_AnIn1" />
+      <DO name="trip" type="SPS_1_Proxy"/>
+      <DO name="IntIn1" type="INS_Kalina" />
+      <DO name="IntIn2" type="INS_Kalina" />
+      <DO name="SPCSO1" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO2" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO3" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO4" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO5" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO6" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO7" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO8" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO9" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO10" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO11" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO12" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO13" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO14" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO15" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO16" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO17" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO18" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO19" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO20" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO21" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO22" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO23" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO24" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO25" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO26" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO27" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO28" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO29" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO30" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO31" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO32" type="SPC_1_SPCSO1" />
+      <DO name="Ind1" type="SPS_1_Proxy" />
+      <DO name="Ind2" type="SPS_1_Proxy" />
+      <DO name="Ind3" type="SPS_1_Proxy" />
+      <DO name="Ind4" type="SPS_1_Proxy" />
+      <DO name="Ind5" type="SPS_1_Proxy" />
+      <DO name="Ind6" type="SPS_1_Proxy" />
+      <DO name="Ind7" type="SPS_1_Proxy" />
+      <DO name="Ind8" type="SPS_1_Proxy" />
+      <DO name="Ind9" type="SPS_1_Proxy" />
+      <DO name="Ind10" type="SPS_1_Proxy" />
+      <DO name="Ind11" type="SPS_1_Proxy" />
+      <DO name="Ind12" type="SPS_1_Proxy" />
+      <DO name="Ind13" type="SPS_1_Proxy" />
+      <DO name="Ind14" type="SPS_1_Proxy" />
+      <DO name="Ind15" type="SPS_1_Proxy" />
+      <DO name="Ind16" type="SPS_1_Proxy" />
+      <DO name="Ind17" type="SPS_1_Proxy" />
+      <DO name="Ind18" type="SPS_1_Proxy" />
+      <DO name="Ind19" type="SPS_1_Proxy" />
+      <DO name="Ind20" type="SPS_1_Proxy" />
+      <DO name="Ind21" type="SPS_1_Proxy" />
+      <DO name="Ind22" type="SPS_1_Proxy" />
+      <DO name="Ind23" type="SPS_1_Proxy" />
+      <DO name="Ind24" type="SPS_1_Proxy" />
+      <DO name="Ind25" type="SPS_1_Proxy" />
+      <DO name="Ind26" type="SPS_1_Proxy" />
+      <DO name="Ind27" type="SPS_1_Proxy" />
+      <DO name="Ind28" type="SPS_1_Proxy" />
+      <DO name="Ind29" type="SPS_1_Proxy" />
+      <DO name="Ind30" type="SPS_1_Proxy" />
+      <DO name="Ind31" type="SPS_1_Proxy" />
+      <DO name="Ind32" type="SPS_1_Proxy" />
+    </LNodeType>
+    <LNodeType id="GGIO5" lnClass="GGIO">
+      <DO name="Mod" type="SPS_1_Proxy" />
+      <DO name="Beh" type="ENS_behaviour_Kalina" />
+      <DO name="SPCSO1" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO2" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO3" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO4" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO5" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO6" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO7" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO8" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO9" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO10" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO11" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO12" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO13" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO14" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO15" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO16" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO17" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO18" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO19" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO20" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO21" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO22" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO23" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO24" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO25" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO26" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO27" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO28" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO29" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO30" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO31" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO32" type="SPC_1_SPCSO1" />
+      <DO name="Ind1" type="SPS_1_Proxy" />
+      <DO name="Ind2" type="SPS_1_Proxy" />
+      <DO name="Ind3" type="SPS_1_Proxy" />
+      <DO name="Ind4" type="SPS_1_Proxy" />
+      <DO name="Ind5" type="SPS_1_Proxy" />
+      <DO name="Ind6" type="SPS_1_Proxy" />
+      <DO name="Ind7" type="SPS_1_Proxy" />
+      <DO name="Ind8" type="SPS_1_Proxy" />
+      <DO name="Ind9" type="SPS_1_Proxy" />
+      <DO name="Ind10" type="SPS_1_Proxy" />
+      <DO name="Ind11" type="SPS_1_Proxy" />
+      <DO name="Ind12" type="SPS_1_Proxy" />
+      <DO name="Ind13" type="SPS_1_Proxy" />
+      <DO name="Ind14" type="SPS_1_Proxy" />
+      <DO name="Ind15" type="SPS_1_Proxy" />
+      <DO name="Ind16" type="SPS_1_Proxy" />
+      <DO name="Ind17" type="SPS_1_Proxy" />
+      <DO name="Ind18" type="SPS_1_Proxy" />
+      <DO name="Ind19" type="SPS_1_Proxy" />
+      <DO name="Ind20" type="SPS_1_Proxy" />
+      <DO name="Ind21" type="SPS_1_Proxy" />
+      <DO name="Ind22" type="SPS_1_Proxy" />
+      <DO name="Ind23" type="SPS_1_Proxy" />
+      <DO name="Ind24" type="SPS_1_Proxy" />
+      <DO name="Ind25" type="SPS_1_Proxy" />
+      <DO name="Ind26" type="SPS_1_Proxy" />
+      <DO name="Ind27" type="SPS_1_Proxy" />
+      <DO name="Ind28" type="SPS_1_Proxy" />
+      <DO name="Ind29" type="SPS_1_Proxy" />
+      <DO name="Ind30" type="SPS_1_Proxy" />
+      <DO name="Ind31" type="SPS_1_Proxy" />
+      <DO name="Ind32" type="SPS_1_Proxy" />
+    </LNodeType>
+    <LNodeType id="GGIO1" lnClass="GGIO">
+      <DO name="Mod" type="SPS_1_Proxy" />
+      <DO name="Beh" type="ENS_behaviour_Kalina" />
+      <DO name="Health" type="ENS_health_Kalina" />
+      <DO name="SPCSO1" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO2" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO3" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO4" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO5" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO6" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO7" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO8" type="SPC_1_SPCSO1" />
+    </LNodeType>
+    <LNodeType id="GGIO6" lnClass="GGIO">
+      <DO name="Mod" type="SPS_1_Proxy" />
+      <DO name="Beh" type="ENS_behaviour_Kalina" />
+      <DO name="Health" type="ENS_health_Kalina" />
+      <DO name="SPCSO1" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO2" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO3" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO4" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO5" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO6" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO7" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO8" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO9" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO10" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO11" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO12" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO13" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO14" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO15" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO16" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO17" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO18" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO19" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO20" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO21" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO22" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO23" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO24" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO25" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO26" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO27" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO28" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO29" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO30" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO31" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO32" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO33" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO34" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO35" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO36" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO37" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO38" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO39" type="SPC_1_SPCSO1" />
+      <DO name="SPCSO40" type="SPC_1_SPCSO1" />
+    </LNodeType>
+    <DOType id="modENC_Kalina" cdc="ENC">
+      <DA name="Oper" bType="Struct" type="tcOper_Mod_OnTestBlock" fc="CO" />
+      <DA name="stVal" bType="Enum" type="OnTestBlockOff" fc="ST" dchg="true" />
+      <DA name="q" bType="Quality" fc="ST" qchg="true" />
+      <DA name="t" bType="Timestamp" fc="ST" />
+      <DA name="ctlModel" bType="Enum" valKind="RO" type="StatusDirect" fc="CF">
+        <Val>direct-with-normal-security</Val>
+      </DA>
+    </DOType>
+    <DOType id="ENS_behaviour_Kalina" cdc="ENS">
+      <DA name="stVal" bType="Enum" type="Beh" dchg="true" fc="ST" />
+      <DA name="q" bType="Quality" qchg="true" fc="ST" />
+      <DA name="t" bType="Timestamp" fc="ST" />
+    </DOType>
+    <DOType id="ENS_health_Kalina" cdc="ENS">
+      <DA name="stVal" bType="Enum" type="Health" dchg="true" fc="ST" />
+      <DA name="q" bType="Quality" qchg="true" fc="ST" />
+      <DA name="t" bType="Timestamp" fc="ST" />
+    </DOType>
+    <DOType id="LPL_LN0_Kalina" cdc="LPL">
+      <DA name="vendor" bType="VisString255" fc="DC">
+        <Val>KEPM Ltd.</Val>
+      </DA>
+      <DA name="swRev" bType="VisString255" fc="DC">
+        <Val>KEPM-ORION-APK-2020-V1</Val>
+      </DA>
+      <DA name="d" bType="VisString255" fc="DC" />
+      <DA name="configRev" bType="VisString255" fc="DC">
+        <Val>1</Val>
+      </DA>
+      <DA name="ldNs" bType="VisString255" fc="EX">
+        <Val>IEC 61850-7-4:2010</Val>
+      </DA>
+    </DOType>
+    <DOType id="DPL_1_PhyNam" cdc="DPL">
+      <DA name="vendor" bType="VisString255" fc="DC">
+        <Val>KEPM Ltd.</Val>
+      </DA>
+      <DA name="swRev" bType="VisString255" fc="DC">
+        <Val>KEPM-ORION-APK-2020-V1</Val>
+      </DA>
+      <DA name="hwRev" bType="VisString255" fc="DC">
+        <Val>KEPM-ORION-APK-PRM-2020-V1</Val>
+      </DA>
+      <DA name="model" bType="VisString255" fc="DC">
+        <Val>ORION-APK-PRM</Val>
+      </DA>
+      <DA name="serNum" bType="VisString255" fc="DC">
+        <Val>2.044</Val>
+      </DA>
+    </DOType>
+    <DOType id="SPS_1_Proxy" cdc="SPS">
+      <DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" />
+      <DA name="q" bType="Quality" fc="ST" qchg="true" />
+      <DA name="t" bType="Timestamp" fc="ST" />
+    </DOType>
+    <DOType id="LPL_2_NamPlt" cdc="LPL">
+      <DA name="vendor" bType="VisString255" fc="DC" />
+      <DA name="swRev" bType="VisString255" fc="DC" />
+      <DA name="d" bType="VisString255" fc="DC" />
+    </DOType>
+    <DOType id="MV_1_AnIn1" cdc="MV">
+      <DA name="mag" type="AnalogueValue_1" bType="Struct" fc="MX" dchg="true" />
+      <DA name="q" bType="Quality" fc="MX" qchg="true" />
+      <DA name="t" bType="Timestamp" fc="MX" />
+    </DOType>
+    <DOType id="INS_Kalina" cdc="INS">
+      <DA name="stVal" bType="INT32" dchg="true" fc="ST" />
+      <DA name="q" bType="Quality" qchg="true" fc="ST" />
+      <DA name="t" bType="Timestamp" fc="ST" />
+    </DOType>
+    <DOType id="SPC_1_SPCSO1" cdc="SPC">
+      <DA name="Oper" type="Indperate_1" bType="Struct" fc="CO" />
+      <DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" />
+      <DA name="q" bType="Quality" fc="ST" qchg="true" />
+      <DA name="t" bType="Timestamp" fc="ST" />
+      <DA name="ctlModel" bType="Enum" type="ctlModel" fc="CF">
+        <Val>direct-with-normal-security</Val>
+      </DA>
+      <DA name="pulseConfig" type="PulseConfig" bType="Struct" fc="CF" />
+    </DOType>
+    <DAType id="PulseConfig">
+      <BDA name="cmdQual" type="ControlOutputKind" bType="Enum" />
+      <BDA name="onDur" bType="INT32U" />
+      <BDA name="offDur" bType="INT32U" />
+      <BDA name="numPls" bType="INT32U" />
+    </DAType>
+    <DAType id="Indperate_1">
+      <BDA name="ctlVal" bType="BOOLEAN" />
+      <BDA name="origin" type="Originator" bType="Struct" />
+      <BDA name="ctlNum" bType="INT8U" />
+      <BDA name="T" bType="Timestamp" />
+      <BDA name="Test" bType="BOOLEAN" />
+      <BDA name="Check" bType="Check" />
+    </DAType>
+    <DAType id="tcOper_Mod_OnTestBlock">
+      <BDA name="ctlVal" bType="Enum" type="OnTestBlockOff" />
+      <BDA name="origin" bType="Struct" type="Originator" />
+      <BDA name="ctlNum" bType="INT8U" />
+      <BDA name="T" bType="Timestamp" />
+      <BDA name="Test" bType="BOOLEAN" />
+      <BDA name="Check" bType="Check" />
+      <ProtNs>IEC 61850-8-1:2003</ProtNs>
+    </DAType>
+    <DAType id="AnalogueValue_1">
+      <BDA name="f" bType="FLOAT32" />
+    </DAType>
+    <DAType id="Originator">
+      <BDA name="orCat" type="OrCat" bType="Enum" />
+      <BDA name="orIdent" bType="Octet64" />
+    </DAType>
+    <EnumType id="ControlOutputKind">
+      <EnumVal ord="0">pulse</EnumVal>
+      <EnumVal ord="1">persistent</EnumVal>
+    </EnumType>
+    <EnumType id="OrCat">
+      <EnumVal ord="0">not-supported</EnumVal>
+      <EnumVal ord="1">bay-control</EnumVal>
+      <EnumVal ord="2">station-control</EnumVal>
+      <EnumVal ord="3">remote-control</EnumVal>
+      <EnumVal ord="4">automatic-bay</EnumVal>
+      <EnumVal ord="5">automatic-station</EnumVal>
+      <EnumVal ord="6">automatic-remote</EnumVal>
+      <EnumVal ord="7">maintenance</EnumVal>
+      <EnumVal ord="8">process</EnumVal>
+    </EnumType>
+    <EnumType id="sboClass">
+      <EnumVal ord="0">operate-once</EnumVal>
+      <EnumVal ord="1">operate-many</EnumVal>
+    </EnumType>
+    <EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="OnTestBlockOff">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="StatusDirect">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+    </EnumType>
+    <EnumType id="ENS_Behaviour_Kalina">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="ENS_health_Kalina">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+  </DataTypeTemplates>
+</SCL>
